@@ -1,0 +1,7 @@
+.hint_body, .solution_body {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
