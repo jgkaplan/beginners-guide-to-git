@@ -1,4 +1,5 @@
-#!/bin/bash
-
-add_tags.py
-git add tag
+#!/bin/sh
+echo
+./add_tags.py
+touch .commit
+exit
