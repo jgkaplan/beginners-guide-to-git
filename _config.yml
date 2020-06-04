@@ -23,6 +23,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jgkaplan
 permalink: none
 show_excerpts: true
+header_pages: [about.md, categories.md]
 
 paginate: 6
 

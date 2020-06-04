@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="post">
-<h1>Tag: {{ page.tag }}</h1>
-<ul>
+<h2 class="post-list-heading">Tagged: {{ page.tag }}</h2>
+<ul class='post-list'>
 {% for post in site.tags[page.tag] %}
     <li>
       {% include post_preview.html post=post %}
