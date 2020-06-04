@@ -29,13 +29,13 @@ paginate: 6
 
 # Post defaults:
 excerpt_separator: <!--more-->
-defaults:
-    -
-        scope:
-          path: "" # an empty string here means all files in the project
-          type: "posts"
-        values:
-          solution: []
+# defaults:
+#     -
+#         scope:
+#           path: "" # an empty string here means all files in the project
+#           type: "posts"
+#         values:
+#           solutions: -
 
 
 # Build settings

@@ -2,7 +2,7 @@
 layout: puzzle
 title: "A Strange Mate"
 tags: chess checkmate
-solution: [
+solutions: [
     Rook to h1, then any of Black's moves can be answered with a mate.
 ]
 hints: [

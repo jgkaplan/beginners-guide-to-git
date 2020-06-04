@@ -1,7 +1,7 @@
 .hint_body, .solution_body {
-    opacity: 0;
+    display: none;
 }
 
 .visible {
-    opacity: 1;
+    display: inline-block;
 }
