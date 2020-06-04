@@ -22,10 +22,14 @@ layout: default
   </div>
   {%- endif -%}
 
+  {%- if page.solutions -%}
   <div class="post-solution">
+      {%- for solution in page.solutions -%}
       <button onclick="reveal('Solution', this)">Show Solution</button>
-      <span class="solution_body">{{ page.solution }}</span>
+      <span class="solution_body">{{ solution }}</span>
+      {%- endfor -%}
   </div>
+  {%- endif -%}
 
   {%- if page.tags -%}
   <div class="tags">
