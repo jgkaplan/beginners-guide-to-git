@@ -15,7 +15,7 @@ layout: default
   <div class="hints">
         {%- for hint in page.hints -%}
         <div class="hint">
-                <button onclick="reveal(this)">Show Hint</button>
+                <button onclick="reveal('Hint', this)">Show Hint</button>
                 <span class="hint_body">{{ hint }}</span>
         </div>
         {%- endfor -%}
@@ -23,17 +23,18 @@ layout: default
   {%- endif -%}
 
   <div class="post-solution">
-      <button onclick="reveal(this)">Show Solution</button>
+      <button onclick="reveal('Solution', this)">Show Solution</button>
       <span class="solution_body">{{ page.solution }}</span>
   </div>
 
   {%- if page.tags -%}
   <div class="tags">
       <label>tags:</label>
+      <span class="post-tags">
       {%- for tag in page.tags -%}
-        <span> {{ tag }} </span>
-      <!-- TODO: make into links -->
+        <a href="/tag/{{tag}}">{{ tag }} </a>
       {%- endfor -%}
+    </span>
   </div>
   {%- endif -%}
 
@@ -45,7 +46,10 @@ layout: default
 </article>
 
 <script>
-    function reveal(elem){
+    function reveal(str, elem){
+        elem.textContent = (
+            elem.nextElementSibling.classList.contains('visible') ? 'Show' : 'Hide'
+        ) + ' ' + str;
         elem.nextElementSibling.classList.toggle('visible');
     }
 </script>
