@@ -3,6 +3,9 @@
   {{ include.post.title | escape }}
 </a>
 </h3>
+{%- if include.post.difficulty -%}
+<h4 class="post-difficulty">Difficulty: {{ post.difficulty }}</h4>
+{%- endif -%}
 {%- if site.show_excerpts -%}
 {{ include.post.excerpt }}
 {%- endif -%}
