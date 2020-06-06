@@ -3,7 +3,6 @@ layout: puzzle
 title: "Chicken, Fox, and Corn"
 tags: logic river
 difficulty: 1 river
-verify:
 solutions:
     - First bring the chicken. Then come back alone. Then bring the fox.
         Bring back the chicken with you. Leave the chicken, and bring the corn.
