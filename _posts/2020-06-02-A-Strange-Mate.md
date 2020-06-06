@@ -6,6 +6,8 @@ difficulty: Checkmate level
 verify: It's a rook move
 solutions:
     - Rook to h1, then any of Black's moves can be answered with a mate.
+        I think there are probably other stall moves that work too, such as
+        king to h1.
 hints:
     - Note that Black has no good moves.
 ---

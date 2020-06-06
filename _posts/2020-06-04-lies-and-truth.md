@@ -1,7 +1,7 @@
 ---
 layout: puzzle
 title: "One Only Tells Lies, The Other Only Tells The Truth"
-tags: logic
+tags: logic lies
 difficulty: 1 question
 solutions:
     - Go to the person in front of the first road and ask,
