@@ -3,6 +3,8 @@ layout: puzzle
 title: "Lies, Truth, and Randomness"
 tags: logic lies questions
 difficulty: 2 question
+solutions:
+    -
 hints:
     - You somehow want to make them answer the same thing.
 ---
