@@ -5,10 +5,9 @@ tags: other
 difficulty: 1 package
 solutions:
     - Alice should lock the package and send it to Bob. Bob should then put his
-    own lock on the package and send it back to Alice. Then Alice can take off
-    her lock and send it back to Bob. Finally, Bob can unlock the package.
-    - Another solution is that Alice can send an empty package, locked, with a different key attached to the lock. A while later, Alice can send the actual package locked with the lock associated with that key. Then Bob can
-    open the package using the key still attached to the first package.
+      own lock on the package and send it back to Alice. Then Alice can take off her lock and send it back to Bob. Finally, Bob can unlock the package.
+    - Another solution is that Alice can send an empty package, locked, with a
+      different key attached to the lock. A while later, Alice can send the actual package locked with the lock associated with that key. Then Bob can open the package using the key still attached to the first package.
 hints:
     - The package can travel through the mail multiple times.
     - You can put multiple locks on a single package.
