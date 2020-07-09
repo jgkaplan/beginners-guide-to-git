@@ -1,7 +1,7 @@
 ---
 layout: puzzle
 title: "Three Gods"
-tags: logic lies
+tags: logic lies questions
 difficulty: 3 questions
 ---
 
