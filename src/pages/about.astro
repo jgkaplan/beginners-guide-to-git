@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+---
+
+<Layout
+  title="About | Wonder's Puzzle Assortment"
+  description="About this puzzle collection"
+>
+  <article>
+    <div class="prose">
+      <div class="title">
+        <div class="date">
+          <FormattedDate date={new Date("March 31 2024")} />
+        </div>
+        <h1>About</h1>
+        <hr />
+      </div>
+      <p>
+        I like puzzles and riddles, but haven't been able to find a good website
+        that collects "interesting" ones. This is an attempt to consolidate
+        various puzzles I've tried and like.
+      </p>
+
+      <p>
+        I don't think difficulty ratings make much sense, since different people
+        think in very different ways, and can see some solutions more easily
+        than others. Thus all the difficulty ratings given here are both
+        subjective and arbitrary, and should not be taken too seriously.
+      </p>
+
+      <p>
+        When possible, I will try to provide verifications of the solution, so
+        you can check if your solution is right without revealing a full
+        explanation.
+      </p>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .prose {
+    width: 720px;
+    max-width: calc(100% - 2em);
+    margin: auto;
+    padding: 1em;
+    color: rgb(var(--gray-dark));
+  }
+  .title {
+    margin-bottom: 1em;
+    padding: 1em 0;
+    text-align: center;
+    line-height: 1;
+  }
+  .title h1 {
+    margin: 0 0 0.5em 0;
+  }
+  .date {
+    margin-bottom: 0.5em;
+    color: rgb(var(--gray));
+  }
+</style>

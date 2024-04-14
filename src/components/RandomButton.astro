@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import Button from "./Button.astro";
+
+const puzzle_pages = (await getCollection("puzzle")).map((p) => p.slug);
+const num_pages = puzzle_pages.length;
+---
+
+<Button id="random-button">Random</Button>
+
+<script is:inline define:vars={{ puzzle_pages, num_pages }}>
+  const button = document.getElementById("random-button");
+  button.addEventListener("click", () => {
+    let page = puzzle_pages[Math.floor(Math.random() * num_pages)];
+    window.location.href = `/puzzle/${page}`;
+  });
+</script>

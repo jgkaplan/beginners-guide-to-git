@@ -1,0 +1,75 @@
+---
+const { length, currentUrl, currentPage, baseUrl, prevUrl, nextUrl, lastUrl } =
+  Astro.props;
+
+const paginationList = Array.from(Array(length), (_, i) => i + 1);
+---
+
+<nav aria-label="Puzzle pages">
+  <!-- <div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">
+            Previous
+          </a>
+        {% endif %}
+        <span class="page_number ">
+          Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        </span>
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% endif %}
+      
+      </div> -->
+
+  {baseUrl == currentUrl ? <span>{"<<"}</span> : <a href={baseUrl}>{"<<"}</a>}
+
+  {prevUrl ? <a href={prevUrl}>Previous</a> : <span>Previous</span>}
+
+  {
+    paginationList.map((num) =>
+      currentPage == num ? (
+        <span>{num}</span>
+      ) : (
+        <a href={`${baseUrl}${num == 1 ? "" : "/" + num}`}>{num}</a>
+      )
+    )
+  }
+  <!-- <a
+ href={`${baseUrl}${num == 1 ? "" : "/" + num}`}
+ class={`pagination__link ${currentPage == num ? "disabled active" : ""}`}
+>
+ {num}
+</a> -->
+  {!nextUrl ? <span>Next</span> : <a href={nextUrl}>Next</a>}
+
+  {
+    lastUrl == currentUrl ? (
+      <span>{">>"}</span>
+    ) : (
+      <a href={lastUrl} class="pagination__link">
+        {">>"}
+      </a>
+    )
+  }
+</nav>
+
+<style>
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  a {
+    color: #aa44aa;
+  }
+
+  a.current {
+  }
+
+  span {
+    color: #661166;
+  }
+</style>

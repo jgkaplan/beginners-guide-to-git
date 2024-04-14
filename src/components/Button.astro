@@ -1,0 +1,37 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+export type Props = HTMLAttributes<"button">;
+---
+
+<button {...Astro.props}><slot /></button>
+
+<style>
+  @property --a {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 10deg;
+  }
+
+  @keyframes rotate {
+    0% {
+      --a: 0deg;
+    }
+    100% {
+      --a: 360deg;
+    }
+  }
+  button {
+    --a: 0deg;
+    background:
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(var(--a), rgb(0, 140, 255), #a600ff) border-box;
+    padding: 6px;
+    border: 5px solid transparent;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 20px;
+    animation: rotate 20s linear infinite;
+    cursor: pointer;
+  }
+</style>

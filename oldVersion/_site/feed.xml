@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-07T22:32:08-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wonder’s Puzzle Assortment</title><subtitle>I like puzzles and riddles, and I'm collecting some of the ones I like here.</subtitle><entry><title type="html">Coconuts and Castaways</title><link href="http://localhost:4000/coconuts-and-castaways.html" rel="alternate" type="text/html" title="Coconuts and Castaways" /><published>2020-06-07T00:00:00-05:00</published><updated>2020-06-07T00:00:00-05:00</updated><id>http://localhost:4000/coconuts-and-castaways</id><content type="html" xml:base="http://localhost:4000/coconuts-and-castaways.html">&lt;p&gt;Ten people land on a deserted island. There they find lots of coconuts and a monkey. During their first day they gather coconuts and put them all in a community pile. After working all day they decide to sleep and divide them into ten equal piles the next morning.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;That night one castaway wakes up hungry and decides to take his share early. After dividing up the coconuts he finds he is one coconut short of ten equal piles. He also notices the monkey holding one more coconut. So he tries to take the monkey’s coconut to have a total evenly divisible by 10. However when he tries to take it the monkey conks him on the head with it and kills him.&lt;/p&gt;
+
+&lt;p&gt;Later another castaway wakes up hungry and decides to take his share early. On the way to the coconuts he finds the body of the first castaway, which pleases him because he will now be entitled to 1/9 of the total pile. After dividing them up into nine piles he is again one coconut short and tries to take the monkey’s slightly bloodied coconut. The monkey conks the second man on the head and kills him.&lt;/p&gt;
+
+&lt;p&gt;One by one each of the remaining castaways goes through the same process, until the 10th person to wake up gets the entire pile for himself. What is the smallest number of possible coconuts in the pile, not counting the monkey’s?&lt;/p&gt;</content><author><name></name></author><category term="math" /><summary type="html">Ten people land on a deserted island. There they find lots of coconuts and a monkey. During their first day they gather coconuts and put them all in a community pile. After working all day they decide to sleep and divide them into ten equal piles the next morning.</summary></entry><entry><title type="html">Land of Poison</title><link href="http://localhost:4000/land-of-poison.html" rel="alternate" type="text/html" title="Land of Poison" /><published>2020-06-07T00:00:00-05:00</published><updated>2020-06-07T00:00:00-05:00</updated><id>http://localhost:4000/land-of-poison</id><content type="html" xml:base="http://localhost:4000/land-of-poison.html">&lt;p&gt;In the land of poison, things work differently: the only antidote to a poison
+is a stronger poison. If you consume a weak poison followed by a strong one,
+you’ll be completely fine, but if you consume a strong poison followed by a weak
+one, you’ll still die.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Knowing this, the king of the land of poison wanted to find the strongest poison
+in the land. He called upon his two most trusted ministers, the minister of potions
+and the minister of finance, and gave them a task. “Each of you will construct
+the strongest poison you can make. You will bring this poison into a room, then
+drink the other person’s poison first, followed by your own. Whoever survives
+clearly had the stronger poison, and I will take that and have the strongest poison
+in the land.”&lt;/p&gt;
+
+&lt;p&gt;The minister of finance was very worried, for he knew that the minister of potions
+knew very much about poisons and would certainly make a stronger poison. He then
+hatched a plan, that would allow him to survive, while the minister of potions dies.
+Confident, he proceeded with his plan. However, the minister of potions had a spy
+who discovered this plan. The minister of potions then came up with a counter plan
+that would allow him to survive, and the minister of finance to die.&lt;/p&gt;
+
+&lt;p&gt;So, the three questions are as follows;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What was the minister of finance’s initial plan?&lt;/li&gt;
+  &lt;li&gt;What was the minister of potion’s counter plan?&lt;/li&gt;
+  &lt;li&gt;Did the king get what he wanted in the end?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Additional information: no tricky business happens inside the room where the poison
+drinking happens. Both are alive upon entering the room, and only one leaves.
+There is no stealing of the other person’s poison required.&lt;/p&gt;</content><author><name></name></author><category term="other" /><summary type="html">In the land of poison, things work differently: the only antidote to a poison is a stronger poison. If you consume a weak poison followed by a strong one, you’ll be completely fine, but if you consume a strong poison followed by a weak one, you’ll still die.</summary></entry><entry><title type="html">Chicken, Fox, and Corn</title><link href="http://localhost:4000/chicken-fox-corn.html" rel="alternate" type="text/html" title="Chicken, Fox, and Corn" /><published>2020-06-05T00:00:00-05:00</published><updated>2020-06-05T00:00:00-05:00</updated><id>http://localhost:4000/chicken-fox-corn</id><content type="html" xml:base="http://localhost:4000/chicken-fox-corn.html">&lt;p&gt;Bring everything across the river with you.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;You are walking through the woods with your chicken, your fox, and your bag of corn.
+You come upon a river, with a boat in it. The boat is only big enough to carry
+you and one other thing across the river at a time.&lt;/p&gt;
+
+&lt;p&gt;However, if you leave the fox and chicken alone, the fox will eat the chicken.
+If you leave the chicken and the bag of corn alone, the chicken will eat the corn.&lt;/p&gt;
+
+&lt;p&gt;How can you bring everything across the river safely?&lt;/p&gt;</content><author><name></name></author><category term="logic" /><category term="river" /><summary type="html">Bring everything across the river with you.</summary></entry><entry><title type="html">Three Gods</title><link href="http://localhost:4000/three-gods.html" rel="alternate" type="text/html" title="Three Gods" /><published>2020-06-05T00:00:00-05:00</published><updated>2020-06-05T00:00:00-05:00</updated><id>http://localhost:4000/three-gods</id><content type="html" xml:base="http://localhost:4000/three-gods.html">&lt;p&gt;Can you figure out the identity of the three gods?
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three gods: one always tells the truth, one always lies, and one answers
+randomly. The gods can understand your language, but only respond in their own.
+(They have words for “yes” and “no”, but you don’t know what they are).&lt;/p&gt;
+
+&lt;p&gt;By asking three yes/no questions (each question is asked to a single god),
+can you figure out which god is which?&lt;/p&gt;
+
+&lt;p&gt;Note, the questions must be able to be answered with a “yes” or a “no”. No
+paradoxes allowed. Assume all gods have knowledge of the future and know how all
+the other gods will answer a question.&lt;/p&gt;</content><author><name></name></author><category term="logic" /><category term="lies" /><summary type="html">Can you figure out the identity of the three gods?</summary></entry><entry><title type="html">3 Cannibals and 3 Missionaries</title><link href="http://localhost:4000/cannibals-and-missionaries.html" rel="alternate" type="text/html" title="3 Cannibals and 3 Missionaries" /><published>2020-06-05T00:00:00-05:00</published><updated>2020-06-05T00:00:00-05:00</updated><id>http://localhost:4000/cannibals-and-missionaries</id><content type="html" xml:base="http://localhost:4000/cannibals-and-missionaries.html">&lt;p&gt;Get everyone across the river.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;3 cannibals and 3 missionaries are on one side of a river. There is a small boat that can only hold two at once. To prevent a tragedy, there can never be more cannibals than missionaries in one place.&lt;/p&gt;
+
+&lt;p&gt;How do they all get across the river?&lt;/p&gt;</content><author><name></name></author><category term="logic" /><category term="river" /><summary type="html">Get everyone across the river.</summary></entry><entry><title type="html">One Only Tells Lies, The Other Only Tells The Truth</title><link href="http://localhost:4000/lies-and-truth.html" rel="alternate" type="text/html" title="One Only Tells Lies, The Other Only Tells The Truth" /><published>2020-06-04T00:00:00-05:00</published><updated>2020-06-04T00:00:00-05:00</updated><id>http://localhost:4000/lies-and-truth</id><content type="html" xml:base="http://localhost:4000/lies-and-truth.html">&lt;p&gt;Can you figure out where the treasure is?
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;You come to a fork in the road. One path leads to treasure, and the other path
+leads to certain death. You don’t know which path is which. In front of the paths
+are standing two people. You know that one of them can only tell lies, and
+one of them can only tell the truth. You don’t know which person is standing
+in front of which path.&lt;/p&gt;
+
+&lt;p&gt;By asking a single one of the people a single yes/no question, can you figure
+out which path will take you to the treasure?&lt;/p&gt;</content><author><name></name></author><category term="logic" /><category term="lies" /><summary type="html">Can you figure out where the treasure is?</summary></entry><entry><title type="html">Probability of Touching a Point</title><link href="http://localhost:4000/r2-graph.html" rel="alternate" type="text/html" title="Probability of Touching a Point" /><published>2020-06-04T00:00:00-05:00</published><updated>2020-06-04T00:00:00-05:00</updated><id>http://localhost:4000/r2-graph</id><content type="html" xml:base="http://localhost:4000/r2-graph.html">&lt;p&gt;You have a graph in R^2 with points at every pair of integer coordinates
+(excluding the origin).
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;What is the probability that a straight line drawn through the origin passes
+through at least one point?&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="probability" /><summary type="html">You have a graph in R^2 with points at every pair of integer coordinates (excluding the origin).</summary></entry><entry><title type="html">8 Queens</title><link href="http://localhost:4000/8queens.html" rel="alternate" type="text/html" title="8 Queens" /><published>2020-06-04T00:00:00-05:00</published><updated>2020-06-04T00:00:00-05:00</updated><id>http://localhost:4000/8queens</id><content type="html" xml:base="http://localhost:4000/8queens.html">&lt;p&gt;Can you arrange 8 queens on a chess board in such a way that none are attacking
+any other?&lt;/p&gt;</content><author><name></name></author><category term="chess" /><summary type="html">Can you arrange 8 queens on a chess board in such a way that none are attacking any other?</summary></entry><entry><title type="html">A Strange Mate</title><link href="http://localhost:4000/A-Strange-Mate.html" rel="alternate" type="text/html" title="A Strange Mate" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>http://localhost:4000/A-Strange-Mate</id><content type="html" xml:base="http://localhost:4000/A-Strange-Mate.html">&lt;p&gt;White has an interesting mate in 2 moves.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;In the puzzle below, it is White to move. Find a way to checkmate Black.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/chess_mate_in_2.png&quot; alt=&quot;test image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="chess" /><category term="checkmate" /><summary type="html">White has an interesting mate in 2 moves.</summary></entry></feed>
