@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const puzzles = await getCollection("puzzle");
+const tags = [...new Set(puzzles.flatMap((puzzle) => puzzle.data.tags))];
+---
+
+<BaseLayout title="Tag Index">
+  <ul>
+    {
+      tags.map((tag) => (
+        <li>
+          <a href={`/tags/${tag}/1`}>{tag}</a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

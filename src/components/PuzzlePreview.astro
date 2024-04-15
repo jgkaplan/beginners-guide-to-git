@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "./FormattedDate.astro";
+
+type Props = CollectionEntry<"puzzle">;
+const puzzle = Astro.props;
+---
+
+<a href={`/puzzle/${puzzle.slug}/`}>
+  <h4 class="title">{puzzle.data.title}</h4>
+  <p class="date">
+    <FormattedDate date={puzzle.data.pubDate} />
+  </p>
+</a>
