@@ -1,0 +1,33 @@
+---
+title: "Probability of Touching a Point"
+description: "What's the probability of a random line touching a point on a grid?"
+tags: ["math", "probability"]
+difficulty: Infinite
+verify: 0
+pubDate: June 4, 2020
+---
+import Hint from '../../components/Hint.astro';
+import Solution from '../../components/Solution.astro'
+
+
+You have a graph in R^2 (the xy plane) with points at every pair of integer coordinates
+(excluding the origin).
+
+What is the probability that a straight line drawn through the origin passes
+through at least one point?
+
+<Hint>
+What does it mean for a line to pass through one such point?
+</Hint>
+<Hint>
+Consider the slope of the line.
+</Hint>
+
+<Solution>
+The probability is 0. Assume the line passes through a point with integer
+coordinates. Call these coordinates (x,y). Then the slope of this line is
+y/x. This question is equivalent to asking what the probability is that the
+slope of this line is rational. Since the irrationals are uncountably infinite,
+and the rationals are countably infinite, the probability is that the slope is
+rational is 0.
+</Solution>

@@ -1,0 +1,123 @@
+---
+title: "Chicken, Fox, and Corn"
+description: "Bring everything across the river with you."
+tags: ["logic", "river"]
+difficulty: 1 river
+verify: 0
+pubDate: June 5, 2020
+---
+import Hint from '../../components/Hint.astro';
+import Solution from '../../components/Solution.astro'
+
+
+You are walking through the woods with your chicken, your fox, and your bag of corn.
+You come upon a river, with a boat in it. The boat is only big enough to carry
+you and one other thing across the river at a time.
+
+However, if you leave the fox and chicken alone, the fox will eat the chicken.
+If you leave the chicken and the bag of corn alone, the chicken will eat the corn.
+
+How can you bring everything across the river safely?
+
+
+<Solution>
+First bring the chicken. Then come back alone. Then bring the fox.
+Bring back the chicken with you. Leave the chicken, and bring the corn.
+Go back alone. Bring the chicken.
+
+Here's a table illustrating this.
+
+🐓 = chicken
+
+🦊 = fox
+
+🌽 = bag of corn
+
+🧑‍🌾 = you
+<div><table>
+<thead>
+    <tr>
+    <th>Left Side</th>
+    <th>Crossing</th>
+    <th>Right Side</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+    <td>🐓🌽🦊🧑‍🌾</td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>🌽🦊</td>
+    <td>🧑‍🌾🐓</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>🌽🦊</td>
+    <td></td>
+    <td>🧑‍🌾🐓</td>
+    </tr>
+    <tr>
+    <td>🌽🦊</td>
+    <td>🧑‍🌾</td>
+    <td>🐓</td>
+    </tr>
+    <tr>
+    <td>🌽🦊🧑‍🌾</td>
+    <td></td>
+    <td>🐓</td>
+    </tr>
+    <tr>
+    <td>🌽</td>
+    <td>🧑‍🌾🦊</td>
+    <td>🐓</td>
+    </tr>
+    <tr>
+    <td>🌽</td>
+    <td></td>
+    <td>🧑‍🌾🦊🐓</td>
+    </tr>
+    <tr>
+    <td>🌽</td>
+    <td>🧑‍🌾🐓</td>
+    <td>🦊</td>
+    </tr>
+    <tr>
+    <td>🧑‍🌾🌽🐓</td>
+    <td></td>
+    <td>🦊</td>
+    </tr>
+    <tr>
+    <td>🐓</td>
+    <td>🧑‍🌾🌽</td>
+    <td>🦊</td>
+    </tr>
+    <tr>
+    <td>🐓</td>
+    <td></td>
+    <td>🧑‍🌾🌽🦊</td>
+    </tr>
+    <tr>
+    <td>🐓</td>
+    <td>🧑‍🌾</td>
+    <td>🌽🦊</td>
+    </tr>
+    <tr>
+    <td>🧑‍🌾🐓</td>
+    <td></td>
+    <td>🌽🦊</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>🧑‍🌾🐓</td>
+    <td>🌽🦊</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td>🧑‍🌾🐓🌽🦊</td>
+    </tr>
+</tbody>
+</table></div>
+</Solution>

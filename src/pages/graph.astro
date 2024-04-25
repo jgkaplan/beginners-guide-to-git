@@ -1,0 +1,12 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const posts = await getCollection("puzzle");
+// return posts.map((post) => ({
+// params: { slug: post.slug },
+// props: post,
+// }));
+---
+
+<BaseLayout> Coming soon! </BaseLayout>

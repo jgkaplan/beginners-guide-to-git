@@ -1,0 +1,9 @@
+- Add graph of puzzles, showing connections between them
+- Make things look nicer
+  - Puzzle previews
+  - Random button at the top
+  - Navigation bar
+  - overall formatting
+  - tag page (word cloud based on number of puzzles per tag?)
+- Put something reasonable on the home page
+- add solution verification

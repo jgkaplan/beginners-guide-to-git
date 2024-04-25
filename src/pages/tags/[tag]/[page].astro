@@ -12,7 +12,7 @@ import { SITE_PAGE_SIZE } from "../../../consts";
 
 export const getStaticPaths = (async ({ paginate }) => {
   const puzzles = (await getCollection("puzzle")).sort(
-    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
   );
   const tags = [...new Set(puzzles.flatMap((puzzle) => puzzle.data.tags))];
 
