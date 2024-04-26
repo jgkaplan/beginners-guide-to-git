@@ -28,17 +28,15 @@ const basePath = pathname[1];
 
 <BaseLayout title={`Puzzles | Page ${page.currentPage}`}>
   <section>
+    <!--Display the current page number. Astro.params.page can also be used!-->
     <ul>
-      <!--Display the current page number. Astro.params.page can also be used!-->
-      <ul>
-        {
-          page.data.map((puzzle) => (
-            <li>
-              <PuzzlePreview {...puzzle} />
-            </li>
-          ))
-        }
-      </ul>
+      {
+        page.data.map((puzzle) => (
+          <li>
+            <PuzzlePreview {...puzzle} />
+          </li>
+        ))
+      }
     </ul>
   </section>
   {
@@ -55,3 +53,9 @@ const basePath = pathname[1];
     )
   }
 </BaseLayout>
+
+<style>
+  ul {
+    list-style: none;
+  }
+</style>

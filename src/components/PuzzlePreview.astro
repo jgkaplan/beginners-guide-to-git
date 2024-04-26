@@ -1,14 +1,35 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import FormattedDate from "./FormattedDate.astro";
-
 type Props = CollectionEntry<"puzzle">;
 const puzzle = Astro.props;
 ---
 
-<a href={`/puzzle/${puzzle.slug}/`}>
-  <h4 class="title">{puzzle.data.title}</h4>
-  <p class="date">
-    <FormattedDate date={puzzle.data.pubDate} />
-  </p>
-</a>
+<div>
+  <a href={`/puzzle/${puzzle.slug}/`}>
+    <h4 class="title">
+      {puzzle.data.title}
+    </h4>
+  </a>
+  <span class="post-difficulty">Difficulty: {puzzle.data.difficulty}</span>
+  <br />
+  {puzzle.data.description}
+  <br />
+  <label>tags: </label>
+  <span class="post-tags">
+    {puzzle.data.tags.map((tag) => <a href={`/tags/${tag}/1`}>{tag}</a>)}
+  </span>
+</div>
+
+<style>
+  div {
+    margin-bottom: 35px;
+  }
+
+  .post-difficulty {
+    font-weight: bold;
+  }
+  .post-tags {
+    display: inline-flex;
+    gap: 8px;
+  }
+</style>

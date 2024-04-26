@@ -16,6 +16,7 @@ npm start
 - Put something reasonable on the home page
 - add solution verification
 - include link to rss
+- add dark mode
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
