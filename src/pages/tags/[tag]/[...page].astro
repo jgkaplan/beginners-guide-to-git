@@ -37,7 +37,7 @@ const { page } = Astro.props;
 const { tag } = Astro.params;
 const titleCaseTag = `${tag[0].toUpperCase()}${tag.slice(1).toLowerCase()}`;
 const pathname = new URL(Astro.request.url).pathname.split("/");
-const basePath = pathname[1];
+const basePath = pathname[2];
 ---
 
 <BaseLayout title={`Tagged: ${titleCaseTag} | Page ${page.currentPage}`}>
@@ -54,19 +54,7 @@ const basePath = pathname[1];
       }
     </ul>
   </section>
-  {
-    page.lastPage > 1 && (
-      <Pagination
-        length={page.lastPage}
-        currentUrl={page.url.current}
-        currentPage={page.currentPage}
-        baseUrl={`/${basePath}`}
-        prevUrl={page.url.prev}
-        nextUrl={page.url.next}
-        lastUrl={`/${basePath}/${page.lastPage}`}
-      />
-    )
-  }
+  <Pagination {page} baseUrl={`/tags/${basePath}/`} />
 </BaseLayout>
 
 <style>

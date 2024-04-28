@@ -12,7 +12,7 @@ const tags = [...new Set(puzzles.flatMap((puzzle) => puzzle.data.tags))];
     {
       tags.map((tag) => (
         <li>
-          <a href={`/tags/${tag}/1`}>{tag}</a>
+          <a href={`/tags/${tag}`}>{tag}</a>
         </li>
       ))
     }

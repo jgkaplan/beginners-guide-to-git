@@ -17,6 +17,7 @@ npm start
 - add solution verification
 - include link to rss
 - add dark mode
+- add puzzle submissions
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |

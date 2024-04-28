@@ -1,12 +1,29 @@
 ---
-const { length, currentUrl, currentPage, baseUrl, prevUrl, nextUrl, lastUrl } =
-  Astro.props;
+import type { Page } from "astro";
+
+interface Props {
+  baseUrl: string;
+  page: Page;
+}
+
+const { page, baseUrl } = Astro.props;
+
+const length = page.lastPage;
+const currentUrl = page.url.current;
+const currentPage = page.currentPage;
+const prevUrl = page.url.prev;
+const nextUrl = page.url.next;
+const lastUrl = `${baseUrl}${page.lastPage}`;
 
 const paginationList = Array.from(Array(length), (_, i) => i + 1);
 ---
 
+{page.lastPage > 1 && 
 <nav aria-label="Puzzle pages">
-  <!-- <div class="pagination">
+  {
+
+    /*
+<!-- <div class="pagination">
         {% if paginator.previous_page %}
           <a href="{{ paginator.previous_page_path }}" class="previous">
             Previous
@@ -21,7 +38,17 @@ const paginationList = Array.from(Array(length), (_, i) => i + 1);
       
       </div> -->
 
-  {baseUrl == currentUrl ? <span>{"<<"}</span> : <a href={baseUrl}>{"<<"}</a>}
+    */
+  }
+  
+
+  {
+    (baseUrl == currentUrl+'/' || baseUrl == currentUrl) ? (
+      <span>{"<<"}</span>
+    ) : (
+      <a href={baseUrl}>{"<<"}</a>
+    )
+  }
 
   {prevUrl ? <a href={prevUrl}>Previous</a> : <span>Previous</span>}
 
@@ -30,27 +57,24 @@ const paginationList = Array.from(Array(length), (_, i) => i + 1);
       currentPage == num ? (
         <span>{num}</span>
       ) : (
-        <a href={`${baseUrl}${num == 1 ? "" : "/" + num}`}>{num}</a>
+        <a href={`${baseUrl}${num == 1 ? "" : num}`}>{num}</a>
       )
     )
   }
-  <!-- <a
+  {
+    /*
+<!-- <a
  href={`${baseUrl}${num == 1 ? "" : "/" + num}`}
  class={`pagination__link ${currentPage == num ? "disabled active" : ""}`}
 >
  {num}
 </a> -->
+    */
+  }
+  
   {!nextUrl ? <span>Next</span> : <a href={nextUrl}>Next</a>}
 
-  {
-    lastUrl == currentUrl ? (
-      <span>{">>"}</span>
-    ) : (
-      <a href={lastUrl} class="pagination__link">
-        {">>"}
-      </a>
-    )
-  }
+  {lastUrl == currentUrl ? <span>{">>"}</span> : <a href={lastUrl}>{">>"}</a>}
 </nav>
 
 <style>
@@ -73,3 +97,4 @@ const paginationList = Array.from(Array(length), (_, i) => i + 1);
     color: #661166;
   }
 </style>
+}

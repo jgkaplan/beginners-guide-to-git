@@ -1,14 +1,14 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import type {
   InferGetStaticParamsType,
   InferGetStaticPropsType,
   GetStaticPaths,
 } from "astro";
-import Pagination from "../../components/Pagination.astro";
-import PuzzlePreview from "../../components/PuzzlePreview.astro";
-import { SITE_PAGE_SIZE } from "../../consts";
+import Pagination from "../components/Pagination.astro";
+import PuzzlePreview from "../components/PuzzlePreview.astro";
+import { SITE_PAGE_SIZE } from "../consts";
 
 export const getStaticPaths = (async ({ paginate }) => {
   const puzzles = (await getCollection("puzzle")).sort(
@@ -22,8 +22,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 // All paginated data is passed on the "page" prop
 const { page } = Astro.props;
 
-const pathname = new URL(Astro.request.url).pathname.split("/");
-const basePath = pathname[1];
+// const pathname = new URL(Astro.request.url).pathname.split("/");
 ---
 
 <BaseLayout title={`Puzzles | Page ${page.currentPage}`}>
@@ -39,19 +38,7 @@ const basePath = pathname[1];
       }
     </ul>
   </section>
-  {
-    page.lastPage > 1 && (
-      <Pagination
-        length={page.lastPage}
-        currentUrl={page.url.current}
-        currentPage={page.currentPage}
-        baseUrl={`/${basePath}`}
-        prevUrl={page.url.prev}
-        nextUrl={page.url.next}
-        lastUrl={`/${basePath}/${page.lastPage}`}
-      />
-    )
-  }
+  <Pagination {page} baseUrl={"/"} />
 </BaseLayout>
 
 <style>
