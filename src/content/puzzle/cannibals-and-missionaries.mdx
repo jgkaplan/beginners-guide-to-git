@@ -1,10 +1,26 @@
 ---
-layout: puzzle
 title: "3 Cannibals and 3 Missionaries"
-tags: logic river
+description: "Get everyone across the river."
+tags: ["logic", "river"]
 difficulty: 3 Cannibals
-solutions:
-    - <div class="tg-wrap"><table>
+pubDate: June 5, 2020
+---
+import Hint from '../../components/Hint.astro';
+import Solution from '../../components/Solution.astro'
+
+Three cannibals and three missionaries are on one side of a river. There is a small boat that can only hold two at once. To prevent a tragedy, there can never be more cannibals than missionaries in one place.
+
+How do they all get across the river?
+
+
+<Solution>
+In the table below, left side and right side are the different sides of the river.
+Direction indicates which way the boat is bringing people.
+
+C = cannibal
+
+M = missionary
+<div class="tg-wrap"><table>
         <thead>
           <tr>
             <th>Left side</th>
@@ -75,11 +91,4 @@ solutions:
           </tr>
         </tbody>
         </table></div>
----
-
-Get everyone across the river.
-<!--more-->
-
-3 cannibals and 3 missionaries are on one side of a river. There is a small boat that can only hold two at once. To prevent a tragedy, there can never be more cannibals than missionaries in one place.
-
-How do they all get across the river?
+</Solution>

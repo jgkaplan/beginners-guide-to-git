@@ -18,6 +18,7 @@ npm start
 - include link to rss
 - add dark mode
 - add puzzle submissions
+- sources for puzzles
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
