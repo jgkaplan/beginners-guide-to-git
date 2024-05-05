@@ -3,18 +3,94 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const puzzles = await getCollection("puzzle");
-const tags = [...new Set(puzzles.flatMap((puzzle) => puzzle.data.tags))];
+const tags = puzzles.reduce((map: Record<string, number>, puzzle) => {
+  for (let tag of puzzle.data.tags) {
+    map[tag] = (map[tag] || 0) + 1;
+  }
+  return map;
+}, {});
+const total = Object.values(tags).reduce((acc, next) => acc + next, 0);
+const max_count = Object.values(tags).reduce(
+  (acc, next) => Math.max(acc, next),
+  0
+);
+const min_count = Object.values(tags).reduce(
+  (acc, next) => Math.min(acc, next),
+  0
+);
+function fontSize(count: number) {
+  let percent = count / total;
+  let base = "1rem";
+  let max = "10rem";
+  return `calc((${max} - ${base}) * ${percent} + ${base})`;
+}
+
+function color(count: number) {
+  let percent = (count - min_count) / max_count;
+  let max = 0.8;
+  let min = 0.3;
+  // return `oklch(40% 0.2506 ${percent * 360});`;
+  return `oklch(${percent * (max - min) + min} 0.2506 276.2);`;
+}
+// const tags = [...new Set(puzzles.flatMap((puzzle) => puzzle.data.tags))];
 ---
 
 <BaseLayout title="Tag Index">
-  <h3>Tags:</h3>
+  <h3>Tags</h3>
   <ul>
     {
-      tags.map((tag) => (
+      Object.entries(tags).map(([tag, count]) => (
         <li>
-          <a href={`/tags/${tag}`}>{tag}</a>
+          <a
+            href={`/tags/${tag}`}
+            data-count={count}
+            style={{ "font-size": fontSize(count), "--color": color(count) }}
+          >
+            {tag}
+          </a>
         </li>
       ))
     }
   </ul>
 </BaseLayout>
+
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+  }
+
+  ul a {
+    color: var(--color);
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+    position: relative;
+  }
+
+  ul a:hover {
+    color: oklch(from var(--color) l c 300);
+    transition: color 0.1s;
+  }
+
+  ul a:active {
+    color: oklch(from var(--color) l 0.1 300);
+  }
+
+  /* ul a::after {
+    content: "(" attr(data-count) ")";
+    font-size: 1rem;
+  } */
+
+  @media (prefers-reduced-motion) {
+    ul * {
+      transition: none !important;
+    }
+  }
+</style>

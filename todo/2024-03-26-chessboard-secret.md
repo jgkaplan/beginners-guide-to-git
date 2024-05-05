@@ -21,7 +21,7 @@ weighings
 - petals around the rose
 - 3 hats
 - 100 hats
-  +each digit counts the number of occurrences of that digit. Find another one.
+- each digit counts the number of occurrences of that digit. Find another one.
 - 1 2 4 (three numbers in ascending order. find the pattern)
 - 500 coins, 10 flip randomly, divide into two piles with same number of heads & tails
 - 1000 bottles, one poisoned, 10 prisoners
